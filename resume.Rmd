@@ -10,7 +10,6 @@ output:
     self_contained: true
 params:
   doctype: "HTML" # "PDF" or "HTML" is automatically updated in update_resume.R 
-
 ---
 
 ```{r setup, include=FALSE}
@@ -52,21 +51,21 @@ Contact {#contact}
 # Adjust contact info based on document type - html has link while pdf does not
 if(params$doctype == "HTML") {
   glue::glue('
-    - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
-    - <i class="fa fa-phone"></i> <a href="tel:+19109886368">(910) 988-6368</a>
-    - <i class="fa fa-envelope"></i> matt.leary@protonmail.com
-    - <i class="fa fa-github"></i> [github.com/mleary](https://github.com/mleary)
-    - <i class="fab fa-linkedin-in"></i> [linkedin.com/mbleary](https://www.linkedin.com/in/mbleary/)
+    - <i class="fa fa-map-marked-alt"></i> Philadelphia, Pennsylvania
+    - <i class="fa fa-phone"></i> <a href="tel:+12158058955">(215) 805-8955</a>
+    - <i class="fa fa-envelope"></i> j.kyle.armstrong@gmail.com
+    - <i class="fa fa-github"></i> [github.com/jkylearmstrong](https://github.com/jkylearmstrong/)
+    - <i class="fab fa-linkedin-in"></i> [linkedin.com/jkylearmstrong](https://www.linkedin.com/in/jkylearmstrong/)
   ')
 } 
 
 if(params$doctype == "PDF") {
   glue::glue('
-    - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
-    - <i class="fa fa-phone"></i> 910.988.6368
-    - <i class="fa fa-envelope"></i> matt.leary<!-- breaking hyplerlink -->@protonmail.com
-    - <i class="fa fa-github"></i> github.com/mleary
-    - <i class="fab fa-linkedin-in"></i> linkedin.com/mbleary
+    - <i class="fa fa-map-marked-alt"></i> Philadelphia, Pennsylvania
+    - <i class="fa fa-phone"></i> (215) 805-8955
+    - <i class="fa fa-envelope"></i> j.kyle.armstrong<!-- breaking hyplerlink -->@gmail.com
+    - <i class="fa fa-github"></i> github.com/jkylearmstrong
+    - <i class="fab fa-linkedin-in"></i> linkedin.com/jkylearmstrong
   ')
 }
 
@@ -126,13 +125,13 @@ Disclaimer {#disclaimer}
 if(params$doctype == "HTML") {
   glue::glue("
     Made w/ [**pagedown**](https://github.com/rstudio/pagedown).   
-    Source code: [**Github repo**](https://github.com/mleary/resume).
+    Source code: [**Github repo**](https://github.com/jka_resume/resume).
   ")
 } 
 if(params$doctype == "PDF") {
   glue::glue("
     Made w/ **pagedown::html_resume**
-    Code: **github.com/mleary/resume** 
+    Code: **github.com/jka_resume/resume** 
   ")
 }
 ```
@@ -147,7 +146,7 @@ Main
 ================================================================================
 
 
-Matthew Leary {#title}
+J Kyle Armstrong {#title}
 --------------------------------------------------------------------------------
 
 I enjoy working with data to find and deliver insights, solve business problems, and build tools that help people work more efficiently. I moved into data science after 10+ years working in public policy and public relations.
